@@ -680,7 +680,20 @@ console.log("\n -------------EXERCISE 21 ------------- \n")
 */
 
 
+const halfTree = function (n) {
 
+let star = "*"
+  for (i = 0; i < n; i++) {
+    
+    console.log(star)
+    star = star + "*"
+    
+  }
+}
+
+halfTree(3)
+
+console.log("\n -------------EXERCISE 22 ------------- \n")
 
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
@@ -690,6 +703,22 @@ console.log("\n -------------EXERCISE 21 ------------- \n")
    *** 
   *****
 */
+
+const tree = function (n) {
+
+  let star = "*"
+  let space = " "
+    for (i = 0; i < n; i++) {
+      
+      console.log(space + star)
+      star = star + "*"
+      space = (n-i)*space
+      
+      
+    }
+  }
+  
+  tree(5)
 
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
