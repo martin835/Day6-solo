@@ -653,10 +653,20 @@ const searchAndDivide = function (searchWord) {
   
   console.log(searchAndDivide("Lord"))
 
-
+  console.log("\n -------------EXERCISE 20 ------------- \n")
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a parameter and returns the provided movies array without the element in the given position.
 */
+
+
+const removeIndex = function (index) {
+  movies.splice(index,1)
+  return movies
+}
+
+console.log(removeIndex(2))
+
+console.log("\n -------------EXERCISE 21 ------------- \n")
 
 // [EXTRAS] JS Advanced
 
@@ -668,6 +678,9 @@ const searchAndDivide = function (searchWord) {
   **
   ***
 */
+
+
+
 
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
