@@ -192,7 +192,7 @@ console.log("\n -------------EXERCISE 1 ------------- \n")
 // RANDOM FUNCTION: https://www.w3schools.com/js/js_random.asp
 
 const dice = function() {
-  return Math.floor(Math.random() * (6 - 1 + 1) ) + 1;
+  return Math.floor(Math.random() * 6) + 1;
 }
 
 console.log(dice())
