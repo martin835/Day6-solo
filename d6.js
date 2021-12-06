@@ -704,25 +704,46 @@ console.log("\n -------------EXERCISE 22 ------------- \n")
   *****
 */
 
-const tree = function (n) {
 
-  let star = "*"
-  let space = " "
-    for (i = 0; i < n; i++) {
-      
-      console.log(space + star)
-      star = star + "*"
-      space = (n-i)*space
-      
-      
-    }
-  }
+
+const tree = function (h) {
+    for(let i=0; i<=h; i++){
+      let star = '';
+      //Changed to start high then decrease
+      for(let k = 1; k <= h - i; k++){
+        //shortened to one space
+        star += " ";
+      };
+      for(let j=0; j<=i; j++) {
+          //Added space so there is an odd number
+          //of symbols and the star above fits
+          //the space
+          star += " *";
+      };
+      //Moved into the loop
+      console.log(star);
+    };
+  };
   
-  tree(5)
+ 
+  
+  tree(15);
+
+
+  console.log("\n -------------EXERCISE 23 ------------- \n")
 
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
 */
+
+
+const isItPrime = function (num) {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num > 1;
+}
+
+console.log(isItPrime(81))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
